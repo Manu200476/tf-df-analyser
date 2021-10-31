@@ -27,7 +27,8 @@ if submit:
         data.append(tfdf_data)
 
     cols = pd.MultiIndex.from_product([url_list, sub_colums])
-    df = pd.DataFrame(data, columns=cols)
+    df = pd.DataFrame(tfdf_data, columns=cols)
+    st.write(df)
 
     st.download_button(label="Download", data=convert_to_csv(df), file_name=f"TF-IDF-{datetime.date.today()}.csv")
 
