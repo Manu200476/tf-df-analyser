@@ -1,6 +1,5 @@
 import numpy as np
 from newspaper import Article
-import streamlit as st
 from sklearn.feature_extraction.text import TfidfVectorizer
 from nltk.corpus import stopwords
 import re
